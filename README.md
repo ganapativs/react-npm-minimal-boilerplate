@@ -1,22 +1,18 @@
-# Minimal boilerplate for creating React Npm packages with ES2015
+# Minimal boilerplate for creating React NPM packages
+Boilerplate to get started with react NPM package instantly.
 
-The package is based on [react-npm-boilerplate](https://github.com/juliancwirko/react-npm-boilerplate) package. This one is prepared to be used as a starter point for React components which needs to be published on Npm.
-
-It includes linting with [ESLint](http://eslint.org/).
-
-Also there is of course ES6 transpilation.
+## Features
+- ES6, ES7, ES8 support
+- [Class properties support](https://github.com/tc39/proposal-class-fields)
+- Decorators support
+- [ESLint](http://eslint.org/) with [AirBnB style guide](https://www.npmjs.com/package/eslint-config-airbnb) & [Prettier](https://github.com/prettier/prettier)
+- Transpilation to ES5
 
 ## Usage
-
 1. Clone this repo
-2. Inside cloned repo run `npm install`
-3. If you want to run linting: `npm run lint`. Fix bugs: `npm run lint-fix`. You can adjust your `.eslintrc` config file.
-4. If you want to run transpilation to ES5 in `dist` folder: `npm run prepublish` (standard npm hook).
+2. Inside cloned repo run `yarn`
+3. If you want to run linting: `yarn run lint`. Fix lint issues and prettify code 😎: `yarn run lint-fix`. You can adjust your `.eslintrc` config file.
+4. If you want to run transpilation to ES5 in `dist` folder: `yarn run prepublish` (standard npm hook).
 
-## Blog post about it:
-
-- [Creating React NPM packages with ES2015](http://julian.io/creating-react-npm-packages-with-es2015/)
-
-## License
-
+## Licenses
 MIT

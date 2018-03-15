@@ -9,10 +9,14 @@ Boilerplate to get started with react NPM package instantly.
 - Transpilation to ES5
 
 ## Usage
-1. Clone this repo
-2. Inside cloned repo run `yarn`
-3. If you want to run linting: `yarn run lint`. Fix lint issues and prettify code 😎: `yarn run lint-fix`. You can adjust your `.eslintrc` config file.
-4. If you want to run transpilation to ES5 in `dist` folder: `yarn run prepublish` (standard npm hook).
+1. Clone the repo: `git clone https://github.com/ganapativs/react-npm-minimal-boilerplate.git my-awesome-react-npm-package && cd $_`
+2. Remove .git: `rm -rf .git`
+3. Install dependencies: `yarn`
+4. Lint: `yarn run lint`
+5. Fix lint issues and prettify code 😎: `yarn run lint-fix`
+6. Transpilation to ES5 in `dist` folder: `yarn run prepublish` (standard npm hook)
+7. [Push package to your own Github repository](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+8. Publish package: `yarn run publish`
 
 ## Licenses
 MIT

@@ -18,5 +18,5 @@ Boilerplate to get started with react NPM package instantly.
 7. [Push package to your own Github repository](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 8. Publish package: `yarn run publish`
 
-## Licenses
+## License
 MIT

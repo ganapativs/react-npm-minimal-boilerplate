@@ -21,7 +21,7 @@
     "react"
   ],
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.build.js --mode development --hot --progress --colors --open",
+    "dev": "webpack-dev-server --mode development --hot --progress --colors --open",
     "prepublish": "NODE_ENV=production babel --plugins '@babel/transform-modules-umd' src --out-dir ./dist",
     "lint": "eslint ./src",
     "lint-fix": "eslint ./src --fix"

@@ -23,7 +23,10 @@ class AwesomeComponent extends React.Component {
   render() {
     return (
       <div>
-        {"I'm Awesome 😎"}
+        Say
+        <span role="img" aria-label="cool">
+          🤘
+        </span>
         <button type="button" onClick={this.sayYo}>
           Yo!
         </button>

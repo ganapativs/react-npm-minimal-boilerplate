@@ -7,11 +7,13 @@
     "env": {
         "development": {
             "plugins": [
+                ["emotion", { "sourceMap": true, "autoLabel": true }],
                 "react-hot-loader/babel"
             ]
         }
     },
     "plugins": [
+        ["emotion", { "hoist": true }],
         "react-hot-loader/babel",
         "@babel/plugin-transform-runtime",
         "@babel/plugin-proposal-class-properties",

@@ -16,7 +16,14 @@ const config = {
             },
             {
                 test: /(\.jsx|\.js)$/,
-                loader: 'eslint-loader',
+                use: [
+                    {
+                        loader: 'eslint-loader',
+                        options: {
+                            fix: true,
+                        },
+                    }
+                ],
                 exclude: /node_modules/
             }
         ]

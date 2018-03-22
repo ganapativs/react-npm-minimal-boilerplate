@@ -3,6 +3,11 @@
  * */
 import React from "react";
 import PropTypes from "prop-types";
+import { css } from "react-emotion";
+
+const defaultBackground = "#3f51b5";
+const hoveredBackground = "#673ab7";
+const textColor = "#ffffff";
 
 class AwesomeComponent extends React.Component {
   state = {
@@ -22,15 +27,31 @@ class AwesomeComponent extends React.Component {
 
   render() {
     return (
-      <div>
-        Say
-        <span role="img" aria-label="cool">
+      <button
+        type="button"
+        onClick={this.sayYo}
+        className={css`
+          background-color: ${defaultBackground};
+          border: 0;
+          border-radius: 20px;
+          padding: 10px 20px;
+          font-size: 14px;
+          font-weight: 600;
+          color: ${textColor};
+          line-height: 1.4;
+          transition: background 0.15s ease-out;
+          &:hover {
+            cursor: pointer;
+            background-color: ${hoveredBackground};
+            transition: background 0.25s ease-in;
+          }
+        `}
+      >
+        Yo
+        <span role="img" aria-label="yo">
           🤘
         </span>
-        <button type="button" onClick={this.sayYo}>
-          Yo!
-        </button>
-      </div>
+      </button>
     );
   }
 }

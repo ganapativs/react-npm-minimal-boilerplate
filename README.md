@@ -3,6 +3,7 @@ Boilerplate to get started with react NPM package instantly.
 
 ## Features
 - ES6, ES7, ES8 support
+- CSS in JS using [emotion](https://github.com/emotion-js/emotion)
 - [Class properties support](https://github.com/tc39/proposal-class-fields)
 - Decorators support
 - [ESLint](http://eslint.org/) with [AirBnB style guide](https://www.npmjs.com/package/eslint-config-airbnb) & [Prettier](https://github.com/prettier/prettier)

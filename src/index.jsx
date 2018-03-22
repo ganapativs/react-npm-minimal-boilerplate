@@ -9,6 +9,23 @@ const defaultBackground = "#3f51b5";
 const hoveredBackground = "#673ab7";
 const textColor = "#ffffff";
 
+const buttonClass = css`
+  background-color: ${defaultBackground};
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: ${textColor};
+  line-height: 1.4;
+  transition: background 0.15s ease-out;
+  &:hover {
+    cursor: pointer;
+    background-color: ${hoveredBackground};
+    transition: background 0.25s ease-in;
+  }
+`;
+
 class AwesomeComponent extends React.Component {
   state = {
     saidYo: false
@@ -27,26 +44,7 @@ class AwesomeComponent extends React.Component {
 
   render() {
     return (
-      <button
-        type="button"
-        onClick={this.sayYo}
-        className={css`
-          background-color: ${defaultBackground};
-          border: 0;
-          border-radius: 20px;
-          padding: 10px 20px;
-          font-size: 14px;
-          font-weight: 600;
-          color: ${textColor};
-          line-height: 1.4;
-          transition: background 0.15s ease-out;
-          &:hover {
-            cursor: pointer;
-            background-color: ${hoveredBackground};
-            transition: background 0.25s ease-in;
-          }
-        `}
-      >
+      <button type="button" onClick={this.sayYo} className={buttonClass}>
         Yo
         <span role="img" aria-label="yo">
           🤘

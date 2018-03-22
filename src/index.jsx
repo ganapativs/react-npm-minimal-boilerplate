@@ -5,12 +5,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { css } from "react-emotion";
 
-const defaultBackground = "#3f51b5";
-const hoveredBackground = "#673ab7";
+const background = "#3f51b5";
+const backgroundHover = "#673ab7";
 const textColor = "#ffffff";
 
 const buttonClass = css`
-  background-color: ${defaultBackground};
+  background-color: ${background};
   border: 0;
   border-radius: 20px;
   padding: 10px 20px;
@@ -21,25 +21,26 @@ const buttonClass = css`
   transition: background 0.15s ease-out;
   &:hover {
     cursor: pointer;
-    background-color: ${hoveredBackground};
+    background-color: ${backgroundHover};
     transition: background 0.25s ease-in;
   }
 `;
 
 class AwesomeComponent extends React.Component {
   state = {
-    saidYo: false
+    yoCount: false
   };
 
   sayYo = () => {
-    const { saidYo } = this.state;
     const { sayYo } = this.props;
 
-    if (!saidYo) {
-      this.setState({ saidYo: true }, () => {
-        sayYo();
-      });
-    }
+    this.setState(
+      ({ yoCount }) => ({ yoCount: yoCount + 1 }),
+      () => {
+        const { yoCount } = this.state;
+        sayYo("".padStart(yoCount * "🤘".length, "🤘")); // emoji's have different byte sizes 🤓
+      }
+    );
   };
 
   render() {
@@ -59,7 +60,7 @@ AwesomeComponent.propTypes = {
 };
 
 AwesomeComponent.defaultProps = {
-  sayYo: () => console.info("🤘") // eslint-disable-line no-console
+  sayYo: yoMessage => alert(yoMessage) // eslint-disable-line no-alert
 };
 
 export default AwesomeComponent;

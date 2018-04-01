@@ -1,7 +1,9 @@
 # Minimal boilerplate for creating React NPM packages
+
 Boilerplate to get started with react NPM package instantly.
 
 ## Features
+
 - ES6, ES7, ES8 support
 - CSS in JS using [emotion](https://github.com/emotion-js/emotion)
 - [Class properties support](https://github.com/tc39/proposal-class-fields)
@@ -11,6 +13,7 @@ Boilerplate to get started with react NPM package instantly.
 - Playground to test & manipulate components in realtime(webpack + react hot loader)
 
 ## Usage
+
 1. Clone the repo: `git clone https://github.com/ganapativs/react-npm-minimal-boilerplate.git my-awesome-react-npm-package && cd $_`
 2. Remove .git: `rm -rf .git`
 3. Install dependencies: `yarn`
@@ -21,5 +24,10 @@ Boilerplate to get started with react NPM package instantly.
 8. [Push package to your own Github repository](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 9. Publish package: `yarn run publish`
 
+## Todo
+
+- [ ] Test cases
+
 ## License
+
 MIT

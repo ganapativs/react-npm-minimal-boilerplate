@@ -1,6 +1,6 @@
 {
   "name": "react-npm-minimal-boilerplate",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Minimal boilerplate for creating React NPM packages",
   "main": "dist",
   "repository": {
@@ -14,9 +14,9 @@
   },
   "homepage": "https://github.com/ganapativs/react-npm-minimal-boilerplate",
   "keywords": [
-    "react-boileplate",
+    "react-boilerplate",
     "react-component",
-    "boileplate",
+    "boilerplate",
     "component",
     "react"
   ],
